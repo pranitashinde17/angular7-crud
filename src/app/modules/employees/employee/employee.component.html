@@ -1,0 +1,69 @@
+<h3 style="color:salmon">Enter details here</h3>
+<div class="row">
+	<div class="col-md-6 form-group">
+		<input id="name" name="name" placeholder="First name" class="form-control" [(ngModel)]="employeeService.currentEmployee.firstname" required minlength="4" #name="ngModel">
+
+		<div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert alert-danger">
+
+  <div *ngIf="name.errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="name.errors.minlength">
+    Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="name.errors.forbiddenName">
+    Name cannot be Bob.
+  </div>
+
+</div>
+	</div>
+	<div class="col-md-6 form-group">
+		<input id="lname" name="lname"placeholder="Last name" class="form-control" [(ngModel)]="employeeService.currentEmployee.lastname" required minlength="4" #lname="ngModel">
+
+<div *ngIf="lname.invalid && (lname.dirty || lname.touched)"
+    class="alert alert-danger">
+
+  <div *ngIf="lname.errors.required">
+    Last Name is required.
+  </div>
+  <div *ngIf="lname.errors.minlength">
+    Last Name must be at least 4 characters long.
+  </div>
+  <div *ngIf="lname.errors.forbiddenName">
+     Last Name cannot be Bob.
+  </div>
+
+</div>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6 form-group">
+	<input placeholder="Designation" class="form-control"[(ngModel)]="employeeService.currentEmployee.designation">
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-6 form-group">
+	<input placeholder="Contact" class="form-control"[(ngModel)]="employeeService.currentEmployee.contact">
+	</div>	
+	<div class="col-md-6 form-group">
+	<input placeholder="Address" class="form-control" [(ngModel)]="employeeService.currentEmployee.address">
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<button class="btn btn-success btn-block btn-lg"(click)="createAndUpdate(employeeService.currentEmployee)"><i class="fa fa-save"></i>Save</button>
+	</div>
+
+	<div class="col-md-4">
+	<button class="btn btn-primary btn-block btn-lg" (click)="clear()"><i class="fa fa-retweet"></i>clear</button>	
+	</div>
+</div>	
+
+
+
+

@@ -1,0 +1,36 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "firstname": "Madhuri",
+      "lastname": "Sinha",
+      "designation": "Developer Software",
+      "contact": "123456789",
+      "address": "Andheri"
+    },
+    {
+      "id": 2,
+      "firstname": "Pranita",
+      "lastname": "Shinde",
+      "designation": "Jr Engineer",
+      "contact": "7868594323",
+      "address": "Pune"
+    },
+    {
+      "id": 4,
+      "firstname": "pra",
+      "lastname": "shinde",
+      "designation": "deve",
+      "contact": "778",
+      "address": ""
+    },
+    {
+      "id": 5,
+      "firstname": "",
+      "lastname": "xcvcvb",
+      "designation": "",
+      "contact": null,
+      "address": ""
+    }
+  ]
+}
